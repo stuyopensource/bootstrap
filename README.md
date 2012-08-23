@@ -1,3 +1,78 @@
+bootstrap-meals
+===============
+
+bootstrap-meals is a small extention of Twitter's Bootstrap. All new material is in the following files:
+
+* less-meals/
+* img-meals/
+* ttf-meals/
+* makefile
+* *.sh
+
+All new code compiles to bootstrap/css/bootstrap-meals.css and bootstrap/css/bootstrap-meals.min.css.
+
+Compiling
+---------
+
+If you would like to port changes to Twitter's latest version, run `./update.sh`, which runs the `make bootstrap` command in the (lowercase m) makefile.
+
+Afterward, just run the `make bootstrap-update` command, which only updates the extension-specific files for faster compiling. Ideally this should be handled through make's dependencies.
+
+TODO
+----
+
+* pare down files compiled
+* test iPad retina
+* adjust dependencies so one can just run `make bootstrap`
+bootstrap-meals
+===============
+
+bootstrap-meals is a small extention of Twitter's Bootstrap. All new material is in the following files:
+
+* less-meals/
+* img-meals/
+* ttf-meals/
+* makefile
+* *.sh
+
+Compiling
+---------
+
+Initially, run `make bootstrap` command, which takes precedence over Makefile's make bootstrap command.
+
+Afterward, just run `make bootstrap-update` command, which only updates the extension-specific files for faster compiling. Ideally this should be handled through make's dependencies.
+
+TODO
+----
+
+* test iPad retina
+* adjust dependencies so one can just run `make bootstrap`
+bootstrap-meals
+===============
+
+bootstrap-meals is a small extention of Twitter's Bootstrap. All new material is in the following files:
+
+* less-meals/
+* img-meals/
+* ttf-meals/
+* makefile
+* *.sh
+
+This is not a fork. All interactions with Twitter's repo are done through the wget command in the update.sh script. This way, only Twitter-tested releases are compiled.
+
+TODO
+----
+
+* add dependencies so one can just run `make bootstrap`
+* test iPad retina
+
+Compiling
+---------
+
+Initially, run `make bootstrap` command, which takes precedence over Makefile's make bootstrap command.
+
+Afterward, just run `make bootstrap-update` command, which only updates the extension-specific files for faster compiling. Ideally this should be handled through make's dependencies.
+
 [Twitter Bootstrap](http://twitter.github.com/bootstrap) [![Build Status](https://secure.travis-ci.org/twitter/bootstrap.png)](http://travis-ci.org/twitter/bootstrap)
 =================
 
