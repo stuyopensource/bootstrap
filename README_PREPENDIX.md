@@ -18,6 +18,11 @@ If you would like to port changes to Twitter's latest version, run `./update.sh`
 
 If you would only like to check local changes, just run the `make bootstrap-update` command, which only updates the bootstrap-meals-specific files for faster compiling. 
 
+Altering README.md
+------------------
+
+To keep Twitter's readme content unchanged, alter README_PREPENDIX.md and run `./prepend_readme.sh`. This will put all additional content (such this sentence)a the top of README.md
+
 TODO
 ----
 
