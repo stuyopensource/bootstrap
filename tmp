@@ -29,4 +29,3 @@ TODO
 * pare down files compiled
 * test iPad retina
 * adjust dependencies so one can just run `make bootstrap`
-

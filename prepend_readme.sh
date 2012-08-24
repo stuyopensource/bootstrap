@@ -1,4 +1,5 @@
 #!/bin/bash
 
-#prepend README.md
-cat README_PREPENDIX.md | cat - README.md > tmp && mv tmp README.md
+#prepend README.me
+cat README_PREPENDIX.md > README.md
+cat README_TWITTER.md >> README.md
