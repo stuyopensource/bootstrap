@@ -16,7 +16,7 @@ Compiling
 
 If you would like to port changes to Twitter's latest version, run `./update.sh`, which runs the `make -B bootstrap` command in the (lowercase m) makefile.
 
-If you would only like to check local changes, just run the `make bootstrap-update` command, which only updates the bootstrap-meals-specific files for faster compiling. 
+If you would only like to check local changes, just run the `make bootstrap-meals` command, which only updates the bootstrap-meals-specific files for faster compiling. 
 
 Altering README.md
 ------------------

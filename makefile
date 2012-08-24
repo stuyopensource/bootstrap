@@ -1,6 +1,6 @@
 BOOTSTRAP_LESS = ./less/bootstrap.less
 BOOTSTRAP_RESPONSIVE_LESS = ./less/responsive.less
-BOOTSTRAP_MEALS_LESS = ./less/meals.less
+BOOTSTRAP_MEALS_LESS = ./less-meals/meals.less
 DATE=$(shell date +%I:%M%p)
 CHECK=\033[32m✔\033[39m
 
@@ -10,7 +10,6 @@ bootstrap:
 	mkdir -p bootstrap/js
 	mkdir -p bootstrap/ttf
 	cp img/* bootstrap/img/
-	cp img-meals/* bootstrap/img/
 	cp ttf-meals/* bootstrap/ttf/
 	recess --compile ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.css
 	recess --compress ${BOOTSTRAP_LESS} > bootstrap/css/bootstrap.min.css
@@ -27,8 +26,7 @@ bootstrap:
 #
 # AN UGLY HACK. SHOULD DO THIS THROUGH MAKE DEPENDENCIES
 #
-bootstrap-update:
-	cp img-meals/* bootstrap/img/
+bootstrap-meals:
 	cp ttf-meals/* bootstrap/ttf/
 	recess --compile ${BOOTSTRAP_MEALS_LESS} > bootstrap/css/bootstrap-meals.css
 	recess --compress ${BOOTSTRAP_MEALS_LESS} > bootstrap/css/bootstrap-meals.min.css

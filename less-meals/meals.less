@@ -15,7 +15,6 @@
 @themeColorJumbotron:    #1E2F39;
 @themeColorButton:       #625D55;
 @cursive:                'Mr Dafoe', cursive;
-@backgroundImage:        url('../../img-meals/grayBackground.png');
 @mealsSansFontFamily:    Garamond, @sansFontFamily;
 @mealsSerifFontFamily:   Bodoni,  @serifFontFamily;
 
@@ -113,7 +112,7 @@ body {
   text-decoration: none;//done
   vertical-align: middle;
   cursor: pointer;
-  .buttonBackground(@themeColorBase, @themeColorButton);
+  .buttonBackground(@themeColorBase, @grayDark);
   border: 1px solid @btnBorder;//changed
   *border: 0; // Remove the border to prevent IE7's black border on input:focus
   border-bottom-color: darken(@btnBorder, 10%);
