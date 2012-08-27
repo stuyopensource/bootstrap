@@ -4,7 +4,6 @@ bootstrap-meals
 bootstrap-meals is a small extention of Twitter's Bootstrap. All new material is in the following files:
 
 * less-meals/
-* img-meals/
 * ttf-meals/
 * makefile
 * *.sh
@@ -21,14 +20,15 @@ If you would only like to check local changes, just run the `make bootstrap-meal
 Altering README.md
 ------------------
 
-To keep Twitter's readme content unchanged, alter README_PREPENDIX.md and run `./prepend_readme.sh`. This will put all additional content (such this sentence)a the top of README.md
+To keep Twitter's readme content unchanged, alter README_PREPENDIX.md and run `./prepend_readme.sh`. This will put all additional content (such as this sentence) at the top of README.md
 
 TODO
 ----
 
-* pare down files compiled
 * test iPad retina
 * adjust dependencies so one can just run `make bootstrap`
+
+
 
 [Twitter Bootstrap](http://twitter.github.com/bootstrap) [![Build Status](https://secure.travis-ci.org/twitter/bootstrap.png)](http://travis-ci.org/twitter/bootstrap)
 =================

@@ -14,6 +14,7 @@
 @themeColorBase:         #CCCFBB;
 @themeColorJumbotron:    #1E2F39;
 @themeColorButton:       #625D55;
+@themeColorHover:        #08C;
 @cursive:                'Mr Dafoe', cursive;
 @mealsSansFontFamily:    Garamond, @sansFontFamily;
 @mealsSerifFontFamily:   Bodoni,  @serifFontFamily;
@@ -82,10 +83,10 @@ body {
   font-family: @cursive;
   float: left;
   color: @themeColor;
-  font-size: @mealsFontSize * 3.5;
-  line-height: @mealsLineHeight * 3.5;
+  font-size: @mealsFontSize * 2.5;
+  line-height: @mealsLineHeight * 2.5;
   text-align: center;
-  margin: -8px 12px -20px 0px;    
+  margin: -6px 6px -13px 0px;    
   width: 50px;
 }
 
@@ -112,7 +113,7 @@ body {
   text-decoration: none;//done
   vertical-align: middle;
   cursor: pointer;
-  .buttonBackground(@themeColorBase, @grayDark);
+  .buttonBackground(@themeColorBase, @themeColorButton);
   border: 1px solid @btnBorder;//changed
   *border: 0; // Remove the border to prevent IE7's black border on input:focus
   border-bottom-color: darken(@btnBorder, 10%);
@@ -200,14 +201,20 @@ body {
   color: @themeColorBase;
 }
 
-.jumbotron h1 {
+.jumbotron h1, .jumbotron h1 a {
   font-size: 72px;
   font-weight: 100;
   letter-spacing: -1px;
   line-height: 1;
   font-style: italic;
+  color: @themeColorBase;
 }
 
+.jumbotron h1 a:hover {
+  color: @themeColorHover;
+  text-decoration: none;
+}
+  
 .jumbotron p {
   font-size: @mealsFontSize * 1.25;
   margin: 5px auto;
@@ -301,9 +308,7 @@ body {
   }
   
   .numbering {
-    font-size: @mealsFontSize * 3;
-    line-height: @mealsLineHeight * 3;
-    margin: -10px 10px -25px 0px;
+    margin: -6px 4px -17px 0px;
   }
   
 }
@@ -367,7 +372,7 @@ body {
   }
 
   .numbering {
-    margin: -5px 15px -15px 0px;
+    margin: -3px 8px -10px 0px;
   }
   
 }

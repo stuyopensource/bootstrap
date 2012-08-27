@@ -105,10 +105,10 @@ body {
 .numbering {
   float: left;
   width: 50px;
-  margin: -8px 12px -20px 0;
+  margin: -6px 6px -13px 0;
   font-family: 'Mr Dafoe', cursive;
-  font-size: 73.5px;
-  line-height: 84px;
+  font-size: 52.5px;
+  line-height: 60px;
   color: #a93447;
   text-align: center;
 }
@@ -140,24 +140,24 @@ body {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   vertical-align: middle;
   cursor: pointer;
-  background-color: #8f9185;
+  background-color: #a2a192;
   background-color: #999999;
-  *background-color: #333333;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cccfbb), to(#333333));
-  background-image: -webkit-linear-gradient(top, #cccfbb, #333333);
-  background-image: -o-linear-gradient(top, #cccfbb, #333333);
-  background-image: linear-gradient(to bottom, #cccfbb, #333333);
-  background-image: -moz-linear-gradient(top, #cccfbb, #333333);
+  *background-color: #625d55;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cccfbb), to(#625d55));
+  background-image: -webkit-linear-gradient(top, #cccfbb, #625d55);
+  background-image: -o-linear-gradient(top, #cccfbb, #625d55);
+  background-image: linear-gradient(to bottom, #cccfbb, #625d55);
+  background-image: -moz-linear-gradient(top, #cccfbb, #625d55);
   background-repeat: repeat-x;
   border: 1px solid #bbbbbb;
   *border: 0;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  border-color: #333333 #333333 #0d0d0d;
+  border-color: #625d55 #625d55 #393631;
   border-bottom-color: #a2a2a2;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffcccfbb', endColorstr='#ff333333', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffcccfbb', endColorstr='#ff625d55', GradientType=0);
   filter: progid:dximagetransform.microsoft.gradient(enabled=false);
   *zoom: 1;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -171,13 +171,13 @@ body {
 .btn.disabled,
 .btn[disabled] {
   color: #ffffff;
-  background-color: #333333;
-  *background-color: #262626;
+  background-color: #625d55;
+  *background-color: #545049;
 }
 
 .btn:active,
 .btn.active {
-  background-color: #1a1a1a \9;
+  background-color: #47433d \9;
 }
 
 .btn:first-child {
@@ -278,12 +278,19 @@ body {
   background-color: #1e2f39;
 }
 
-.jumbotron h1 {
+.jumbotron h1,
+.jumbotron h1 a {
   font-size: 72px;
   font-style: italic;
   font-weight: 100;
   line-height: 1;
   letter-spacing: -1px;
+  color: #cccfbb;
+}
+
+.jumbotron h1 a:hover {
+  color: #0088cc;
+  text-decoration: none;
 }
 
 .jumbotron p {
@@ -369,9 +376,7 @@ body {
     margin: 0 5px;
   }
   .numbering {
-    margin: -10px 10px -25px 0;
-    font-size: 63px;
-    line-height: 72px;
+    margin: -6px 4px -17px 0;
   }
 }
 
@@ -428,6 +433,6 @@ body {
     font-size: 21px;
   }
   .numbering {
-    margin: -5px 15px -15px 0;
+    margin: -3px 8px -10px 0;
   }
 }
