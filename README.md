@@ -15,19 +15,18 @@ Compiling
 
 If you would like to port changes to Twitter's latest version, run `./update.sh`, which runs the `make -B bootstrap` command in the (lowercase m) makefile.
 
-If you would only like to check local changes, just run the `make bootstrap-meals` command, which only updates the bootstrap-meals-specific files for faster compiling. 
+If you would only like to check local changes, just run the `make bootstrap-meals` command, which only updates the bootstrap-meals-specific files for faster compiling.
 
-Altering README.md
-------------------
+Using in other projects
+-----------------------
 
-To keep Twitter's readme content unchanged, alter README_PREPENDIX.md and run `./prepend_readme.sh`. This will put all additional content (such as this sentence) at the top of README.md
+Running `./_download_bootstrap.sh` in another project will cleanly download and extract the compiled bootstrap from this git repository.
 
 TODO
 ----
 
 * test iPad retina
 * adjust dependencies so one can just run `make bootstrap`
-
 
 
 [Twitter Bootstrap](http://twitter.github.com/bootstrap) [![Build Status](https://secure.travis-ci.org/twitter/bootstrap.png)](http://travis-ci.org/twitter/bootstrap)
