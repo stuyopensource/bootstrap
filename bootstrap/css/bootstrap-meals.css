@@ -140,25 +140,25 @@ body {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   vertical-align: middle;
   cursor: pointer;
-  background-color: #a2a192;
   background-color: #999999;
+  background-color: #a2a192;
   *background-color: #625d55;
+  background-image: -moz-linear-gradient(top, #cccfbb, #625d55);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cccfbb), to(#625d55));
   background-image: -webkit-linear-gradient(top, #cccfbb, #625d55);
   background-image: -o-linear-gradient(top, #cccfbb, #625d55);
   background-image: linear-gradient(to bottom, #cccfbb, #625d55);
-  background-image: -moz-linear-gradient(top, #cccfbb, #625d55);
   background-repeat: repeat-x;
   border: 1px solid #bbbbbb;
   *border: 0;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   border-color: #625d55 #625d55 #393631;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   border-bottom-color: #a2a2a2;
   -webkit-border-radius: 5px;
      -moz-border-radius: 5px;
           border-radius: 5px;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffcccfbb', endColorstr='#ff625d55', GradientType=0);
-  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcccfbb', endColorstr='#ff625d55', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   *zoom: 1;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
      -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
@@ -367,7 +367,6 @@ body {
   .jumbotron h1 {
     margin-top: 0;
     margin-right: 0;
-    margin-right: 0;
     margin-bottom: 0;
     font-size: 72px;
     text-align: center;
@@ -402,8 +401,6 @@ body {
 
 @media (max-width: 320px) {
   {
-    /* Scale down the jumbotron content */
-  
     /* Scale down the jumbotron content */
   
   }
