@@ -1,21 +1,20 @@
-bootstrap-meals
-===============
+bootstrap-stuy
+==============
 
-bootstrap-meals is a small extention of Twitter's Bootstrap. All new material is in the following files:
+bootstrap-stuy is a small extention of Twitter's Bootstrap. All new material is in the following files:
 
-* less-meals/
-* ttf-meals/
+* less-stuy/
 * makefile
 * *.sh
 
-All new code compiles to bootstrap/css/bootstrap-meals.css and bootstrap/css/bootstrap-meals.min.css.
+All new code compiles to bootstrap/css/bootstrap-stuy.css and bootstrap/css/bootstrap-stuy.min.css.
 
 Compiling
 ---------
 
 If you would like to port changes to Twitter's latest version, run `./update.sh`, which runs the `make -B bootstrap` command in the (lowercase m) makefile.
 
-If you would only like to check local changes, just run the `make bootstrap-meals` command, which only updates the bootstrap-meals-specific files for faster compiling.
+If you would only like to check local changes, just run the `make bootstrap-stuy` command, which only updates the bootstrap-stuy-specific files for faster compiling.
 
 Using in other projects
 -----------------------
@@ -29,9 +28,6 @@ TODO
 * adjust dependencies so one can just run `make bootstrap`
 
 
-[Twitter Bootstrap](http://twitter.github.com/bootstrap) [![Build Status](https://secure.travis-ci.org/twitter/bootstrap.png)](http://travis-ci.org/twitter/bootstrap)
-=================
-=======
 # [Twitter Bootstrap v2.2.2](http://twitter.github.com/bootstrap) [![Build Status](https://secure.travis-ci.org/twitter/bootstrap.png)](http://travis-ci.org/twitter/bootstrap)
 
 Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development, created and maintained by [Mark Otto](http://twitter.com/mdo) and [Jacob Thornton](http://twitter.com/fat).

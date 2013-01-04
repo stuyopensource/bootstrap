@@ -1,13 +1,6 @@
 /*!
- * Meals on me special-sauce css
+ * stuy special-sauce css
  */
-
-@font-face {
-  font-family: 'Mr Dafoe';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Mr Dafoe Regular'), local('MrDafoe-Regular'), url('../ttf/mr_dafoe.ttf') format('truetype');
-}
 
 .clearfix {
   *zoom: 1;
@@ -106,10 +99,9 @@ body {
   float: left;
   width: 50px;
   margin: -6px 6px -13px 0;
-  font-family: 'Mr Dafoe', cursive;
   font-size: 52.5px;
   line-height: 60px;
-  color: #a93447;
+  color: #d62424;
   text-align: center;
 }
 
@@ -117,7 +109,7 @@ body {
 -------------------------------------------------- */
 
 .themeColorText {
-  color: #a93447;
+  color: #d62424;
 }
 
 /* btn
@@ -132,7 +124,7 @@ body {
   font-size: 16px;
   line-height: 30px;
   *line-height: 20px;
-  color: #a93447 !important;
+  color: #d62424 !important;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
@@ -196,7 +188,7 @@ body {
 .btn.active:hover,
 .btn:focus,
 .btn.active:focus {
-  color: #a93447;
+  color: #d62424;
   text-decoration: none;
   outline: none;
   -webkit-box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.5);
@@ -229,8 +221,8 @@ body {
 
 .btn-mini {
   padding: 2px 6px;
-  font-size: 8px;
-  line-height: 8px;
+  font-size: 14.4px;
+  line-height: 14.4px;
 }
 
 .btn-group {
@@ -274,8 +266,8 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   padding-bottom: 15px;
-  color: #cccfbb;
-  background-color: #1e2f39;
+  color: #d62424;
+  background-color: #3644b3;
 }
 
 .jumbotron h1,
@@ -285,7 +277,13 @@ body {
   font-weight: 100;
   line-height: 1;
   letter-spacing: -1px;
-  color: #cccfbb;
+  color: #d62424;
+}
+
+#seal {
+  width: 64.8px;
+  height: 64.8px;
+  margin-top: 0;
 }
 
 .jumbotron h1 img {
@@ -294,7 +292,7 @@ body {
 }
 
 .jumbotron h1 a:hover {
-  color: #0088cc;
+  color: #ad3d3d;
   text-decoration: none;
   cursor: pointer;
 }
@@ -326,7 +324,7 @@ body {
   visibility: hidden;
 }
 
-.visible-large-phone {
+.visible-phone {
   display: none;
   visibility: hidden;
 }
@@ -341,8 +339,10 @@ body {
   {
     /* Adjust the jumbotron */
   
+    /* Scale down the jumbotron content */
+  
   }
-  .visible-large-phone {
+  .visible-phone {
     display: inline;
     visibility: visible;
   }
@@ -364,12 +364,21 @@ body {
   .btn-group .btn {
     margin: 0 30px;
   }
-  .jumbotron h1 {
+  .jumbotron h1,
+  .jumbotron h1 a {
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
-    font-size: 72px;
+    font-size: 60px;
     text-align: center;
+  }
+  #seal {
+    width: 54px;
+    height: 54px;
+  }
+  .jumbotron h1,
+  jumbotron h1 a {
+    font-size: 30px;
   }
   .jumbotron p {
     margin-right: 0;
@@ -380,12 +389,21 @@ body {
 }
 
 @media (max-width: 480px) {
+  {
+    /* Scale down the jumbotron content */
+  
+  }
   .jumbotron {
     padding-top: 5px;
     padding-bottom: 5px;
   }
-  .jumbotron h1 {
-    font-size: 60px;
+  .jumbotron h1,
+  .jumbotron h1 a {
+    font-size: 48px;
+  }
+  #seal {
+    width: 43.2px;
+    height: 43.2px;
   }
   .jumbotron p {
     font-size: 26.25px;
@@ -415,9 +433,15 @@ body {
     font-size: 10.666666666666666px;
     line-height: 20px;
   }
-  .jumbotron h1 {
+  .jumbotron h1,
+  .jumbotron h1 a {
     margin-top: -1px;
-    font-size: 44px;
+    font-size: 30px;
+  }
+  #seal {
+    width: 27px;
+    height: 27px;
+    margin-right: -3px;
   }
   body {
     font-size: 15.75px;
@@ -447,8 +471,13 @@ body {
     font-size: 15.75px;
     line-height: 18px;
   }
-  .jumbotron h1 {
-    font-size: 54px;
+  .jumbotron h1,
+  jumbotron h1 a {
+    font-size: 60px;
+  }
+  #seal {
+    width: 54px;
+    height: 54px;
   }
   .jumbotron p {
     font-size: 21px;

@@ -1,39 +1,40 @@
 /*!
- * Meals on me special-sauce css
+ * stuy special-sauce css
  */
 
 // Core variables and mixins
-@import "font.less"; //added
-@import "../less/variables.less"; //unchanged
-@import "../less/mixins.less"; //unchanged
+@import "./less/variables.less"; //unchanged
+@import "./less/mixins.less"; //unchanged
 
 /* added variables
 -------------------------------------------------- */
-@themeColor:             #A93447;
-//JW.Fasion from http://kuler.adobe.com/#create/fromacolor
+@themeColor:             #D62424;
 @themeColorBase:         #CCCFBB;
-@themeColorJumbotron:    #1E2F39;
+@themeColorJumbotron:    #3644B3;
 @themeColorButton:       #625D55;
-@themeColorHover:        #08C;
-@cursive:                'Mr Dafoe', cursive;
-@mealsSansFontFamily:    Garamond, @sansFontFamily;
-@mealsSerifFontFamily:   Bodoni,  @serifFontFamily;
+@themeColorHover:        #AD3D3D;
+@stuySansFontFamily:    Garamond, @sansFontFamily;
+@stuySerifFontFamily:   Bodoni,  @serifFontFamily;
 
 /* font sizes and line heights
 -------------------------------------------------- */
-@mealsFontSize:                21px;
-@mealsLineHeight:              24px;
-@subnavFontSize:               16px;
-@subnavLineHeight:             30px;  
+@stuyFontSize:                21px;
+@stuyLineHeight:              24px;
+@subnavFontSize:              16px;
+@subnavLineHeight:            30px;
+@pcTitleSize:            72px;
+@tabletTitleSize:             60px;
+@phoneTitleSize:              48px;
+@smallPhoneTitleSize:         30px;
 
 /* body
 -------------------------------------------------- */
 body {
   // background-image: @backgroundImage;
   background-color: @themeColorBase;
-  font-family: @mealsSansFontFamily;
-  font-size: @mealsFontSize;
-  line-height: @mealsLineHeight;
+  font-family: @stuySansFontFamily;
+  font-size: @stuyFontSize;
+  line-height: @stuyLineHeight;
   padding: 0px;
 }
 
@@ -80,11 +81,10 @@ body {
 /* numbering
 -------------------------------------------------- */
 .numbering {
-  font-family: @cursive;
   float: left;
   color: @themeColor;
-  font-size: @mealsFontSize * 2.5;
-  line-height: @mealsLineHeight * 2.5;
+  font-size: @stuyFontSize * 2.5;
+  line-height: @stuyLineHeight * 2.5;
   text-align: center;
   margin: -6px 6px -13px 0px;    
   width: 50px;
@@ -165,15 +165,15 @@ body {
 // Mini
 .btn-mini {
   padding: 2px 6px;
-  font-size: @subnavFontSize * 0.5;
-  line-height: @subnavFontSize * 0.5;
+  font-size: @subnavFontSize * 0.9;
+  line-height: @subnavFontSize * 0.9;
 }
 
 // Make the div behave like a button
 .btn-group {
   margin: 0 auto; 
   position: relative;
-  top: @mealsLineHeight - @subnavLineHeight * 0.75;  
+  top: @stuyLineHeight - @subnavLineHeight * 0.75;  
   .clearfix(); // clears the floated buttons
   .ie7-restore-left-whitespace();
   text-align: center;
@@ -198,16 +198,22 @@ body {
   padding: 30px;
   padding-top: 0px;
   padding-bottom: 15px;
-  color: @themeColorBase;
+  color: @themeColor;
 }
 
 .jumbotron h1, .jumbotron h1 a {
-  font-size: 72px;
+  font-size: @pcTitleSize;
   font-weight: 100;
   letter-spacing: -1px;
   line-height: 1;
   font-style: italic;
-  color: @themeColorBase;
+  color: @themeColor;
+}
+
+#seal {
+  margin-top: 0px;
+  height: @pcTitleSize * 0.9;
+  width: @pcTitleSize * 0.9;
 }
 
 .jumbotron h1 img {
@@ -222,7 +228,7 @@ body {
 }
   
 .jumbotron p {
-  font-size: @mealsFontSize * 1.25;
+  font-size: @stuyFontSize * 1.25;
   margin: 5px auto;
   text-align: center;
   font-weight: 300;
@@ -236,7 +242,7 @@ body {
 /* instructions
 -------------------------------------------------- */
 #instructions > div {
-  margin-bottom: @mealsFontSize / 2;
+  margin-bottom: @stuyFontSize / 2;
 }
 
 /* Responsive Docs
@@ -246,7 +252,7 @@ body {
   visibility: hidden;
 }
 
-.visible-large-phone {
+.visible-phone {
   display: none;
   visibility: hidden;
 }
@@ -261,7 +267,7 @@ body {
 
 @media (max-width: 767px) {
     
-  .visible-large-phone {
+  .visible-phone {
     display: inline;
     visibility: visible;
   }
@@ -290,22 +296,30 @@ body {
   }
   
   /* Adjust the jumbotron */
-  .jumbotron h1 {
+  .jumbotron h1, .jumbotron h1 a {
     text-align: center;
     margin-right: 0;
-    font-size: 72px;
+    font-size: @tabletTitleSize;
     margin-right: 0;
     margin-top: 0px;
     margin-bottom: 0px;
   }
+
+  #seal {
+    height: @tabletTitleSize * 0.9;
+    width: @tabletTitleSize * 0.9;
+  }
   
-  
-  
+  /* Scale down the jumbotron content */
+  .jumbotron h1, jumbotron h1 a {
+    font-size: @smallPhoneTitleSize;
+  }
+
   .jumbotron p {
     margin-right: 0;
     margin-left: 0;
-    font-size: @mealsFontSize * 1.5;
-    line-height: @mealsLineHeight * 1.5;
+    font-size: @stuyFontSize * 1.5;
+    line-height: @stuyLineHeight * 1.5;
   }
   
 }
@@ -317,13 +331,19 @@ body {
     padding-bottom: 5px;
   }
 
-  .jumbotron h1 {
-    font-size: 60px;
+  /* Scale down the jumbotron content */
+  .jumbotron h1, .jumbotron h1 a {
+    font-size: @phoneTitleSize;
+  }
+
+  #seal {
+    height: @phoneTitleSize * 0.9;
+    width: @phoneTitleSize * 0.9;
   }
 
   .jumbotron p {
-    font-size: @mealsFontSize * 1.25;
-    line-height: @mealsLineHeight * 1.25;
+    font-size: @stuyFontSize * 1.25;
+    line-height: @stuyLineHeight * 1.25;
   }
   
   .btn-group .btn {
@@ -354,14 +374,21 @@ body {
   }
 
   /* Scale down the jumbotron content */
-  .jumbotron h1 {
-    font-size: 44px;
+  .jumbotron h1, .jumbotron h1 a {
+    font-size: @smallPhoneTitleSize;
     margin-top: -1px;
   }
   
+  /* Scale down the jumbotron content */
+  #seal {
+    margin-right: -3px;
+    height: @smallPhoneTitleSize * 0.9;
+    width: @smallPhoneTitleSize * 0.9;
+  }
+
   body {
-    font-size: @mealsFontSize * 0.75;
-    line-height: @mealsLineHeight * 0.75;
+    font-size: @stuyFontSize * 0.75;
+    line-height: @stuyLineHeight * 0.75;
   }
   
   /* Scale down the jumbotron content */
@@ -371,14 +398,14 @@ body {
   }
 
   .jumbotron p {
-    font-size: @mealsFontSize;
-    line-height: @mealsLineHeight;
+    font-size: @stuyFontSize;
+    line-height: @stuyLineHeight;
     margin: 3px auto;
   }
   
   body {
-    font-size: @mealsFontSize * 0.75;
-    line-height: @mealsLineHeight * 0.75;
+    font-size: @stuyFontSize * 0.75;
+    line-height: @stuyLineHeight * 0.75;
   }
 
 } 
@@ -386,17 +413,22 @@ body {
 @media (min-width: 768px) and (max-width: 979px) {
 
   body {
-    font-size: @mealsFontSize * 0.75;
-    line-height: @mealsLineHeight * 0.75;
+    font-size: @stuyFontSize * 0.75;
+    line-height: @stuyLineHeight * 0.75;
   }
   
   /* Scale down the jumbotron content */
-  .jumbotron h1 {
-    font-size: 54px;
+  .jumbotron h1, jumbotron h1 a {
+    font-size: @tabletTitleSize;
+  }
+
+  #seal {
+    height: @tabletTitleSize * 0.9;
+    width: @tabletTitleSize * 0.9;
   }
 
   .jumbotron p {
-    font-size: @mealsFontSize;
+    font-size: @stuyFontSize;
   }
 
   .numbering {
