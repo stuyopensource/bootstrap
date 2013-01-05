@@ -5,7 +5,7 @@
 # 
 
 rm -rf master bootstrap
-wget https://github.com/stuyopensouce/bootstrap/zipball/master
+wget https://github.com/stuyopensource/bootstrap/zipball/master
 unzip -q master
-mv stuyopensouce-bootstrap-*/bootstrap .
-rm -rf stuyopensouce-bootstrap-*
+mv stuyopensource-bootstrap-*/bootstrap .
+rm -rf stuyopensource-bootstrap-*
