@@ -22,7 +22,7 @@
 @stuyLineHeight:              24px;
 @subnavFontSize:              16px;
 @subnavLineHeight:            30px;
-@pcTitleSize:            72px;
+@pcTitleSize:                 72px;
 @tabletTitleSize:             60px;
 @phoneTitleSize:              48px;
 @smallPhoneTitleSize:         30px;
@@ -31,11 +31,22 @@
 -------------------------------------------------- */
 body {
   // background-image: @backgroundImage;
+  color: #000;
   background-color: @themeColorBase;
   font-family: @stuySansFontFamily;
   font-size: @stuyFontSize;
   line-height: @stuyLineHeight;
   padding: 0px;
+}
+
+/* links
+-------------------------------------------------- */
+b > a {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 /* navbar
