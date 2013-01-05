@@ -8,4 +8,4 @@ rm -rf master bootstrap
 wget https://github.com/stuyopensource/bootstrap/zipball/master
 unzip -q master
 mv stuyopensource-bootstrap-*/bootstrap .
-rm -rf stuyopensource-bootstrap-*
+rm -rf stuyopensource-bootstrap-* master
